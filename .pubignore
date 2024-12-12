@@ -1,0 +1,10 @@
+.fvm/
+tool/
+.github/
+coverage/
+example/.metadata
+test/
+build/
+example/ios/
+example/android/
+assets/
