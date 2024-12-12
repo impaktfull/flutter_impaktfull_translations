@@ -14,6 +14,7 @@ A dart package to automaticly download translations from the impaktfull translat
 
 ```yaml
 dependencies:
+  intl: <version-that-matches-your-project>
   sprintf: ^7.0.0
 
 dev-dependencies:
