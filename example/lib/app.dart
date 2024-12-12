@@ -3,7 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:impaktfull_translations_example/screen/home_screen.dart';
 import 'package:impaktfull_translations_example/util/locale/localization_delegate.dart';
 import 'package:impaktfull_translations_example/viewmodel/locale/locale_viewmodel.dart';
-import 'package:impaktfull_ui_2/impaktfull_ui.dart';
+import 'package:impaktfull_ui/impaktfull_ui.dart';
 import 'package:provider/provider.dart';
 
 import 'repository/locale_repository.dart';

@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:impaktfull_architecture/impaktfull_architecture.dart';
 import 'package:impaktfull_translations_example/repository/locale_repository.dart';
 import 'package:impaktfull_translations_example/util/locale/localization_delegate.dart';

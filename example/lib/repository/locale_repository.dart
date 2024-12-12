@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:impaktfull_architecture/impaktfull_architecture.dart';
 
 class LocaleRepository {

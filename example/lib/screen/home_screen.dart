@@ -1,7 +1,7 @@
+import 'package:flutter/widgets.dart';
 import 'package:impaktfull_architecture/impaktfull_architecture.dart';
 import 'package:impaktfull_translations_example/util/locale/localization.dart';
 import 'package:impaktfull_translations_example/viewmodel/locale/locale_viewmodel.dart';
-import 'package:impaktfull_ui_2/impaktfull_ui.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({
@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final localization = Localization.of(context);
     final localeViewModel = Provider.of<LocaleViewModel>(context);
-    return ImpaktfullStatusBar.dark(
+    return ImpaktfullUiStatusBar.dark(
       child: ImpaktfullUiScreen(
         title: 'impaktfull translations',
         child: ImpaktfullUiListView(
