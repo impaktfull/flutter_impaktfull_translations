@@ -30,8 +30,8 @@ flutter:
     - assets/localization/
 
 impaktfull_translations:
-  api_key: "enter-your-api-key"
-  app_uuid: "enter-your-app-uuid"
+  api_key: "05a73dc9-fdf3-48a9-984a-343c3c0df1f6"
+  app_uuid: "b6925bf4-f5c0-47cf-9724-792987c7a695"
   default_language: "nl"
   languages: ["en", "nl"]
   locale_assets_path: "assets/localization"

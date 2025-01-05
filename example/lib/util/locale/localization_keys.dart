@@ -39,13 +39,6 @@ class LocalizationKeys {
 
   /// Translations:
   ///
-  /// en:  **''**
-  ///
-  /// nl:  **'Hallo daar'**
-  static const welcomeMessage = 'welcome_message';
-
-  /// Translations:
-  ///
   /// en:  **'Testing\nargument\n\n[arg1 string] [arg2 number] [arg1 string]'**
   ///
   /// nl:  **'Test\nargument\n\n[arg1 string] [arg2 number] [arg1 string]'**
@@ -67,8 +60,8 @@ class LocalizationKeys {
 
   /// Translations:
   ///
-  /// en:  **'{one: %d hour, other: %d hours}'**
+  /// en:  **'Welcome to the impaktfull translations test app'**
   ///
-  /// nl:  **'{one: %d uur, other: %d uren}'**
-  static const testPlural = 'test_plural';
+  /// nl:  **'Welkom bij de impaktfull translations test app'**
+  static const welcomeMessage = 'welcome_message';
 }

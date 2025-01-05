@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:impaktfull_translations_example/util/locale/localization_keys.dart';
 import 'package:impaktfull_translations_example/util/locale/localization_overrides.dart';
-import 'package:intl/intl.dart';
 import 'package:sprintf/sprintf.dart';
 
 //============================================================//
@@ -64,105 +63,75 @@ class Localization {
     }
   }
 
-  String _plural(String key, {required num count, List<dynamic>? args}) {
-    try {
-      final value = (_localisedOverrideValues[key] ?? _localisedValues[key])
-          as Map<String, dynamic>?;
-      if (value == null) return key;
-
-      final pluralValue = Intl.plural(
-        count,
-        zero: value['zero'] as String?,
-        one: value['one'] as String?,
-        two: value['two'] as String?,
-        few: value['few'] as String?,
-        many: value['many'] as String?,
-        other: value['other'] as String,
-      );
-      if (args == null || args.isEmpty) return pluralValue;
-      return sprintf(pluralValue, args);
-    } catch (e) {
-      return '⚠$key⚠';
-    }
-  }
-
   /// Translations:
   ///
-  /// nl:  **'Test in het Nederlands'**
-  ///
   /// en:  **'Testing in English'**
+  ///
+  /// nl:  **'Test in het Nederlands'**
   String get test => _t(LocalizationKeys.test);
 
   /// Translations:
   ///
-  /// nl:  **'Test argument [arg1 string]'**
-  ///
   /// en:  **'Testing argument [arg1 string]'**
+  ///
+  /// nl:  **'Test argument [arg1 string]'**
   String testArg1(String arg1) =>
       _t(LocalizationKeys.testArg1, args: <dynamic>[arg1]);
 
   /// Translations:
   ///
-  /// nl:  **'Test argument [arg1 number]'**
-  ///
   /// en:  **'Testing argument [arg1 number]'**
+  ///
+  /// nl:  **'Test argument [arg1 number]'**
   String testArg2(int arg1) =>
       _t(LocalizationKeys.testArg2, args: <dynamic>[arg1]);
 
   /// Translations:
   ///
-  /// nl:  **'Test argument [arg1 string] [arg2 number]'**
-  ///
   /// en:  **'Testing argument [arg1 string] [arg2 number]'**
+  ///
+  /// nl:  **'Test argument [arg1 string] [arg2 number]'**
   String testArg3(String arg1, int arg2) =>
       _t(LocalizationKeys.testArg3, args: <dynamic>[arg1, arg2]);
 
   /// Translations:
   ///
-  /// nl:  **'Test argument [arg1 string] [arg2 number] [arg1 string]'**
-  ///
   /// en:  **'Testing argument [arg1 string] [arg2 number] [arg1 string]'**
+  ///
+  /// nl:  **'Test argument [arg1 string] [arg2 number] [arg1 string]'**
   String testArg4(String arg1, int arg2) =>
       _t(LocalizationKeys.testArg4, args: <dynamic>[arg1, arg2]);
 
   /// Translations:
   ///
-  /// nl:  **'Hallo daar'**
-  ///
-  /// en:  **''**
-  String get welcomeMessage => _t(LocalizationKeys.welcomeMessage);
-
-  /// Translations:
+  /// en:  **'Testing\nargument\n\n[arg1 string] [arg2 number] [arg1 string]'**
   ///
   /// nl:  **'Test\nargument\n\n[arg1 string] [arg2 number] [arg1 string]'**
-  ///
-  /// en:  **'Testing\nargument\n\n[arg1 string] [arg2 number] [arg1 string]'**
   String testNewLine(String arg1, int arg2) =>
       _t(LocalizationKeys.testNewLine, args: <dynamic>[arg1, arg2]);
 
   /// Translations:
   ///
-  /// nl:  **'Carriage\r\nReturn'**
-  ///
   /// en:  **'Carriage\r\nReturn'**
+  ///
+  /// nl:  **'Carriage\r\nReturn'**
   String get testNewLineCarriageReturn =>
       _t(LocalizationKeys.testNewLineCarriageReturn);
 
   /// Translations:
   ///
-  /// nl:  **'Test niet positioneel argument %s en %f'**
-  ///
   /// en:  **'Testing non positional argument %s and %.02f'**
+  ///
+  /// nl:  **'Test niet positioneel argument %s en %f'**
   String testNonPositional(String arg1, double arg2) =>
       _t(LocalizationKeys.testNonPositional, args: <dynamic>[arg1, arg2]);
 
   /// Translations:
   ///
-  /// nl:  **'{one: %d uur, other: %d uren}'**
+  /// en:  **'Welcome to the impaktfull translations test app'**
   ///
-  /// en:  **'{one: %d hour, other: %d hours}'**
-  String testPlural(num count, int arg1) =>
-      _plural(LocalizationKeys.testPlural, count: count, args: <dynamic>[arg1]);
+  /// nl:  **'Welkom bij de impaktfull translations test app'**
+  String get welcomeMessage => _t(LocalizationKeys.welcomeMessage);
 
   String getTranslation(String key, {List<dynamic>? args}) =>
       _t(key, args: args ?? <dynamic>[]);

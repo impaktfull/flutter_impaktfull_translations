@@ -24,8 +24,12 @@ abstract class JsonTranslationDownloader
 
     final changedBody = jsonString.replaceAll(r'\\n', r'\n');
     final body = json.decode(changedBody) as Map<String, dynamic>;
-    final translations =
-        body['translations'] as Map<String, dynamic>? ?? <String, dynamic>{};
+    final keys = body.keys.toList();
+    keys.sort((a, b) => a.compareTo(b));
+    final translations = <String, String>{};
+    for (final key in keys) {
+      translations[key] = body[key].toString();
+    }
     file.writeAsStringSync(encoder.convert(translations));
   }
 }

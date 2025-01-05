@@ -49,8 +49,6 @@ class HomeScreen extends StatelessWidget {
             Text(localization.testArg3('string', 1)),
             Text(localization.testArg4('string', 1)),
             Text(localization.testNonPositional('string', 1)),
-            Text(localization.testPlural(4, 4)),
-            Text(localization.testPlural(1, 1)),
           ],
         ),
       ),

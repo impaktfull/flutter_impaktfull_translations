@@ -1,4 +1,15 @@
+# 0.0.3
+
+## Fix
+
+- Fixed the `JsonTranslationDownloader` to use the correct api to download the translations
+- Fixed the correct use of `host` configuration & validation
+- Fixed example to use a production api key & translation app uuid
+- Updated the license to 2025
+
 # 0.0.2
+
+## Fix
 
 - Updated example to use `impaktfull_ui` to 0.13.0
 

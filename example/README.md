@@ -15,7 +15,7 @@ flutter packages pub run impaktfull_translations
 ### Run package with Dart
 
 ```
-pub run impaktfull_translations
+dart pub run impaktfull_translations
 ```
 
 ### Result

@@ -14,7 +14,7 @@ class Params extends LocaleGenParams {
 
   String get apiKey => _apiKey!;
   String get appUuid => _appUuid!;
-  String? get host => _host!;
+  String get host => _host ?? 'https://dashboard.impaktfull.com';
 
   factory Params(String programName) {
     final pubspecYaml = File(join(Directory.current.path, 'pubspec.yaml'));
@@ -64,6 +64,10 @@ class Params extends LocaleGenParams {
           'A `app_uuid` should be added to the $programName section in the pubspec.yaml\n'
           '$programName'
           "  app_uuid: 'your-api-key'");
+    }
+
+    if (!host.startsWith('https://')) {
+      throw Exception('the `host` must start with `https://`');
     }
   }
 }
