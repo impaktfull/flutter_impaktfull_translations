@@ -35,18 +35,18 @@ Add the impaktfull_translations config to fetch the latest translations
 
 ```yaml
 impaktfull_translations:
-  api_key: "enter-your-api-key"
-  project_id: "optional project id"
-  host: "optional host ip/domain"
+  api_key: "enter-your-api-key" # Required if IMPAKTFULL_TRANSLATIONS_TRANSLATION_APP_API_KEY is not set in env variables
+  app_uuid: "translation app uuid" # Required if IMPAKTFULL_TRANSLATIONS_TRANSLATION_APP_UUID is not set in env variables
+  host: "host ip/domain" # Default is https://dashboard.impaktfull.com if IMPAKTFULL_TRANSLATIONS_HOST is not set in env variables
   default_language: "nl"
   languages: ["en", "nl"]
   locale_assets_path: "assets/locale/"
   assets_path: "assets/locale/"
 ```
 
-alternatively set an env variable for your `api_key` and/or `app_uuid`
-
 ### ENV Variables:
+
+alternatively set an env variable for your `api_key` and/or `app_uuid` and/or `host`
 
 - IMPAKTFULL_TRANSLATIONS_TRANSLATION_APP_API_KEY
 - IMPAKTFULL_TRANSLATIONS_TRANSLATION_APP_UUID

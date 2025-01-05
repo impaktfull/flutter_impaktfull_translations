@@ -1,3 +1,13 @@
+# 0.0.4
+
+## Docs
+
+- Updated docs
+
+## Fix
+
+- Example to use correct order of configuration
+
 # 0.0.3
 
 ## Fix
