@@ -11,9 +11,9 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  impaktfull_architecture: ^0.3.1
-  impaktfull_ui: ^0.13.0
-  intl: ^0.19.0
+  impaktfull_architecture: ^0.23.1
+  impaktfull_ui: ^0.71.0
+  intl: ^0.20.2
   provider: ^6.0.5
   sprintf: ^7.0.0
 
@@ -24,6 +24,9 @@ dev_dependencies:
     sdk: flutter
   impaktfull_translations:
     path: ../
+
+dependency_overrides:
+  intl: ^0.20.2
 
 flutter:
   assets:

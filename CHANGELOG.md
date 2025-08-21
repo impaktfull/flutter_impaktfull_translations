@@ -1,3 +1,9 @@
+# 0.1.0
+
+## Feat
+
+- Added support to `locale_gen` 12.6.0. Containing a dart writer to use the translations in a dart app or backend.
+
 # 0.0.4
 
 ## Docs
