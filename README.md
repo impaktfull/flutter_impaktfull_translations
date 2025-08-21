@@ -38,6 +38,7 @@ impaktfull_translations:
   api_key: "enter-your-api-key" # Required if IMPAKTFULL_TRANSLATIONS_TRANSLATION_APP_API_KEY is not set in env variables
   app_uuid: "translation app uuid" # Required if IMPAKTFULL_TRANSLATIONS_TRANSLATION_APP_UUID is not set in env variables
   host: "host ip/domain" # Default is https://dashboard.impaktfull.com if IMPAKTFULL_TRANSLATIONS_HOST is not set in env variables
+  output_type: "flutter" # Default is `flutter`, options are `flutter` or `dart`
   default_language: "nl"
   languages: ["en", "nl"]
   locale_assets_path: "assets/locale/"
