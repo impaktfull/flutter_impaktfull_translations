@@ -1,14 +1,21 @@
 name: impaktfull_translations
-description: Dart tool to generate flutter translations code from the
-  `impaktfull Dashboard - Translation App`
-version: 0.1.0
+description: Fetches your translations from impaktfull translations and
+  generates the Dart code for them with locale_gen, for Flutter and Dart apps.
+version: 1.0.0
 homepage: https://github.com/impaktfull/flutter_impaktfull_translations
+repository: https://github.com/impaktfull/flutter_impaktfull_translations
 environment:
   sdk: ">=3.0.0 <4.0.0"
+executables:
+  impaktfull_translations:
 dependencies:
+  args: ^2.5.0
   http: ^1.5.0
-  locale_gen: ^12.6.0
+  # 12.6.0 is what 0.x generated with; 13 keeps the same params and writer API
+  # and is what the server's setup guides link to. The app's lockfile picks.
+  locale_gen: ">=12.6.0 <14.0.0"
   path: ^1.9.0
+  yaml: ^3.1.2
 dev_dependencies:
   lints: ^5.0.0
   test: ^1.26.3

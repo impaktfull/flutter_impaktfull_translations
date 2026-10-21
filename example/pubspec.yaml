@@ -32,9 +32,11 @@ flutter:
   assets:
     - assets/localization/
 
+# The API key is NOT here: set IMPAKTFULL_TRANSLATIONS_API_KEY in your shell
+# or CI secrets. Replace project_id with your project's id, from its
+# Settings > API keys tab in impaktfull translations.
 impaktfull_translations:
-  app_uuid: "b6925bf4-f5c0-47cf-9724-792987c7a695"
-  api_key: "05a73dc9-fdf3-48a9-984a-343c3c0df1f6"
+  project_id: "00000000-0000-0000-0000-000000000000"
   default_language: "nl"
   languages: ["en", "nl"]
   locale_assets_path: "assets/localization"
